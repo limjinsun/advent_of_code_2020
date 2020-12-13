@@ -10,6 +10,7 @@
 
 ## My Solution using Ruby
 
-Day | Solution |
-:---: | :---: |
-Day 1 | [Report Repair](day1/solution.rb) |
+Day | Solution 
+:---: | :---: 
+Day 1 | [Report Repair](day1/solution.rb) 
+Day 2 | [Password Philosophy](day2/readme.md) 
