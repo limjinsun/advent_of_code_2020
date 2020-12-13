@@ -14,3 +14,5 @@ Day | Solution
 :---: | :---: 
 Day 1 | [Report Repair](day1/solution.rb) 
 Day 2 | [Password Philosophy](day2/readme.md) 
+Day 3 | [Toboggan Trajectory](day3/solution.rb)
+Day 4 | [Passport Processing](day4/solution.rb)
