@@ -18,5 +18,38 @@ until result == 2020
   result = head + tail
 end
 
-puts head * tail
+# what is the product of the three entries that sum to 2020?
+
+head = data.first
+tail = data.last
+second = data[1]
+
+puts data.inspect
+puts "\n\n\n"
+
+for fixed_item in data
+  index = data.find_index(fixed_item)
+  data.delete_at(index)
+
+  l = 0
+  r = data.length - 1
+
+  result = fixed_item + data[l] + data[r]
+  
+  while ( l < r )
+    if result == 2020
+      puts fixed_item * data[l] * data[r]
+      return
+    else
+      if result < 2020
+        l += 1
+      else
+        r -= 1
+      end
+    end
+    result = fixed_item + data[l] + data[r]
+  end
+
+  data.insert(index, fixed_item)
+end
 
