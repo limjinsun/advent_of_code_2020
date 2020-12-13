@@ -48,7 +48,7 @@ def check_values(hash)
 
   return false unless hash['hcl'] == hash['hcl'].match(/#[\d|a-f]+/).to_s
   return false unless %w[amb blu brn gry grn hzl oth].any? { |e| e == hash['ecl'] }
-  return raise_false('passport', hash) unless hash['pid'] == hash['pid'].match(/\d{9}/).to_s
+  return false unless hash['pid'] == hash['pid'].match(/\d{9}/).to_s
 
   return true
 end
